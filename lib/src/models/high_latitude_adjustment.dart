@@ -9,6 +9,13 @@ part 'high_latitude_adjustment.g.dart';
 /// times at high latitude place/location.
 ///
 class HighLatitudeAdjustment extends EnumClass {
+// ---------------------------- CONSTRUCTORS ----------------------------
+
+  ///
+  /// Create [HighLatitudeAdjustment].
+  ///
+  const HighLatitudeAdjustment._(String name) : super(name);
+
   // --------------------------- ENUM CONSTANTS ---------------------------
 
   /// No adjustment applied.
@@ -23,13 +30,8 @@ class HighLatitudeAdjustment extends EnumClass {
   /// Use angle-based adjustment method.
   static const HighLatitudeAdjustment angleBased = _$angleBased;
 
-  // ---------------------------- CONSTRUCTORS ----------------------------
-
-  ///
-  /// Create [HighLatitudeAdjustment].
-  ///
-  const HighLatitudeAdjustment._(String name) : super(name);
-
+  
+  
   // ----------------------------- PROPERTIES -----------------------------
 
   /// All valid values for [HighLatitudeAdjustment].

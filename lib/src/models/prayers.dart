@@ -151,6 +151,13 @@ abstract class Prayer implements Built<Prayer, PrayerBuilder> {
 /// Type of prayer.
 ///
 class PrayerType extends EnumClass {
+  // ---------------------------- CONSTRUCTORS ----------------------------
+
+  ///
+  /// Create [PrayerType].
+  ///
+  const PrayerType._(String name) : super(name);
+
   // --------------------------- ENUM CONSTANTS ---------------------------
 
   /// Imsak prayer type.
@@ -177,13 +184,7 @@ class PrayerType extends EnumClass {
   /// Isha prayer type.
   static const PrayerType isha = _$isha;
 
-  // ---------------------------- CONSTRUCTORS ----------------------------
-
-  ///
-  /// Create [PrayerType].
-  ///
-  const PrayerType._(String name) : super(name);
-
+  
   // ----------------------------- PROPERTIES -----------------------------
 
   /// All valid values for [PrayerType].
@@ -903,17 +904,18 @@ class _PrayersInDouble {
 /// Contains error information thrown by prayer times calculator methods.
 ///
 class _PrayerCalculatorError extends Error {
-  // ------------------------------- FIELDS -------------------------------
-
-  /// Brief message which tells why the error occured.
-  final String reason;
-
   // ---------------------------- CONSTRUCTORS ----------------------------
 
   ///
   /// Create [_PrayerCalculatorError].
   ///
   _PrayerCalculatorError(this.reason);
+  // ------------------------------- FIELDS -------------------------------
+
+  /// Brief message which tells why the error occured.
+  final String reason;
+
+  
 }
 
 ///

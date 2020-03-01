@@ -79,6 +79,13 @@ abstract class CalculationMethod implements Built<CalculationMethod, Calculation
 /// Represents the type of prayer times calculation parameter.
 ///
 class PrayerCalculationParameterType extends EnumClass {
+  // ---------------------------- CONSTRUCTORS ----------------------------
+
+  ///
+  /// Create [PrayerCalculationParameterType].
+  ///
+  const PrayerCalculationParameterType._(String name) : super(name);
+
   // --------------------------- ENUM CONSTANTS ---------------------------
 
   /// Represents parameter which uses minute adjustment.
@@ -87,13 +94,7 @@ class PrayerCalculationParameterType extends EnumClass {
   /// Represents parameter which calculate prayer time using angle value.
   static const PrayerCalculationParameterType angle = _$angle;
 
-  // ---------------------------- CONSTRUCTORS ----------------------------
-
-  ///
-  /// Create [PrayerCalculationParameterType].
-  ///
-  const PrayerCalculationParameterType._(String name) : super(name);
-
+  
   // ----------------------------- PROPERTIES -----------------------------
 
   /// All valid values for [PrayerCalculationParameterType].
@@ -142,6 +143,13 @@ abstract class PrayerCalculationParameter implements Built<PrayerCalculationPara
 /// Calculation method preset.
 ///
 class CalculationMethodPreset extends EnumClass {
+  // ---------------------------- CONSTRUCTORS ----------------------------
+
+  ///
+  /// Create [CalculationMethodPreset].
+  ///
+  const CalculationMethodPreset._(String name) : super(name);
+
   // --------------------------- ENUM CONSTANTS ---------------------------
 
   /// Custom calculation method.
@@ -177,13 +185,7 @@ class CalculationMethodPreset extends EnumClass {
   /// Department of Islamic Advancement of Malaysia calculation method.
   static const CalculationMethodPreset departmentOfIslamicAdvancementOfMalaysia = _$departmentOfIslamicAdvancementOfMalaysia;
 
-  // ---------------------------- CONSTRUCTORS ----------------------------
-
-  ///
-  /// Create [CalculationMethodPreset].
-  ///
-  const CalculationMethodPreset._(String name) : super(name);
-
+  
   // ----------------------------- PROPERTIES -----------------------------
 
   /// All valid values for [CalculationMethodPreset].
@@ -384,6 +386,13 @@ class CalculationMethodPreset extends EnumClass {
 /// Represents the prayer times midnight method.
 ///
 class Midnight extends EnumClass {
+  // ---------------------------- CONSTRUCTORS ----------------------------
+
+  ///
+  /// Create [Midnight].
+  ///
+  const Midnight._(String name) : super(name);
+
   // --------------------------- ENUM CONSTANTS ---------------------------
 
   /// Standard method.
@@ -392,13 +401,7 @@ class Midnight extends EnumClass {
   /// Jafari method.
   static const Midnight jafari = _$jafari;
 
-  // ---------------------------- CONSTRUCTORS ----------------------------
-
-  ///
-  /// Create [Midnight].
-  ///
-  const Midnight._(String name) : super(name);
-
+  
   // ----------------------------- PROPERTIES -----------------------------
 
   /// All valid values for [Midnight].

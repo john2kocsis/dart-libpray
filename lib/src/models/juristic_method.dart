@@ -48,7 +48,13 @@ abstract class JuristicMethod implements Built<JuristicMethod, JuristicMethodBui
 /// method parameter.
 ///
 class JuristicMethodPreset extends EnumClass {
-  // --------------------------- ENUM CONSTANTS ---------------------------
+  // ---------------------------- CONSTRUCTORS ----------------------------
+
+  ///
+  /// Create [JuristicMethodPreset].
+  ///
+  const JuristicMethodPreset._(String name) : super(name);
+// --------------------------- ENUM CONSTANTS ---------------------------
 
   /// Standard juristic method.
   static const JuristicMethodPreset standard = _$standard;
@@ -56,13 +62,7 @@ class JuristicMethodPreset extends EnumClass {
   /// Hanafi juristic method.
   static const JuristicMethodPreset hanafi = _$hanafi;
 
-  // ---------------------------- CONSTRUCTORS ----------------------------
-
-  ///
-  /// Create [JuristicMethodPreset].
-  ///
-  const JuristicMethodPreset._(String name) : super(name);
-
+  
   // ----------------------------- PROPERTIES -----------------------------
 
   /// All valid values for [JuristicMethodPreset].
